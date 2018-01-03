@@ -37,7 +37,7 @@ void configProxy::setHostName(string hostName)
 }
 void configProxy::setPort(unsigned int port)
 {
-      HttpPort = port;
+      Port = port;
 }
 
 Configure* Configure::initConfig()
