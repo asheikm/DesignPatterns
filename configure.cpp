@@ -12,11 +12,11 @@ Configure::Configure()
             while(streamInput.good())
             {
                 streamInput >> tempConfigData[i];
-                if(tempConfigData[0].compare("ipaddress"))
+                if(tempConfigData[0].compare("ipaddress") == 0)
                     setIPaddress(tempConfigData[1]);
-                else if(tempConfigData[0].compare("hostname"))
+                else if(tempConfigData[0].compare("hostname") == 0 )
                     setHostName(tempConfigData[1]);
-                else if(tempConfigData[0].compare("port"))
+                else if(tempConfigData[0].compare("port") == 0)
                     setPort(atoi(tempConfigData[1].c_str()));
                 
                 ++i;
