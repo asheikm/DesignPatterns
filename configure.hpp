@@ -29,6 +29,9 @@ class Configure
 
         public :
                static Configure* initConfig();
+               string setIPaddress();
+               string setHostName();
+               int setPort();
 
 };
 
