@@ -47,3 +47,17 @@ Configure* Configure::initConfig()
      return pconfig;
 }
 
+string configProxy::getIPaddress()
+{
+    return HostIpaddr;
+}
+
+string configProxy::getHostName()
+{
+    return HostName;
+}
+
+int configProxy::getPort()
+{
+    return Port;
+}
